@@ -1,120 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zeya Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeya | Portfolio</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-    body {
-      background: #f4f7fb;
-      color: #333;
-    }
+body{background:#0f172a;color:#e2e8f0;}
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header{
+  text-align:center;
+  padding:40px 20px;
+  background:linear-gradient(135deg,#1e293b,#0f172a);
+}
 
-    header h1 {
-      font-size: 32px;
-    }
+header h1{font-size:36px;}
+header p{color:#94a3b8;}
 
-    nav {
-      margin-top: 10px;
-    }
+nav{margin-top:15px;}
+nav a{
+  color:#cbd5f5;
+  margin:0 10px;
+  text-decoration:none;
+}
+nav a:hover{color:#38bdf8;}
 
-    nav a {
-      color: #cbd5f5;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
+section{padding:60px 20px;text-align:center;}
 
-    nav a:hover {
-      color: #38bdf8;
-    }
+h2{margin-bottom:20px;color:#38bdf8;}
 
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+.container{max-width:1000px;margin:auto;}
 
-    h2 {
-      margin-bottom: 20px;
-      color: #0f172a;
-    }
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
+.card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+  width:260px;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:#38bdf8;
+  color:black;
+  cursor:pointer;
+  font-weight:600;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      width: 250px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
+.links a{
+  display:inline-block;
+  margin:10px;
+  color:#38bdf8;
+  text-decoration:none;
+}
 
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-
-    button {
-      padding: 12px 25px;
-      border: none;
-      background: linear-gradient(135deg, #3b82f6, #06b6d4);
-      color: white;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      opacity: 0.85;
-    }
-
-    footer {
-      background: #0f172a;
-      color: #cbd5f5;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .cards {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-
-  </style>
+footer{
+  text-align:center;
+  padding:15px;
+  background:#020617;
+  color:#94a3b8;
+}
+</style>
 </head>
 
 <body>
@@ -122,6 +85,7 @@
 <header>
   <h1>Zeya</h1>
   <p>Web Developer | CSE Student</p>
+
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -133,40 +97,58 @@
 <section id="about">
   <div class="container">
     <h2>About Me</h2>
-    <p>Hello! I am Zeya, a Computer Science student passionate about web development. I love building modern, responsive and user-friendly websites.</p>
+    <p>
+      I am a Computer Science student with a strong interest in web development.
+      I enjoy building modern, responsive and user-friendly websites and continuously
+      improving my skills.
+    </p>
   </div>
 </section>
 
 <section id="skills">
   <div class="container">
-    <h2>My Skills</h2>
+    <h2>Skills</h2>
     <p>HTML • CSS • JavaScript • Python (Basic)</p>
   </div>
 </section>
 
 <section id="projects">
   <div class="container">
-    <h2>My Projects</h2>
+    <h2>Projects</h2>
+
     <div class="cards">
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>Personal portfolio built using HTML & CSS.</p>
+        <p>Responsive personal portfolio built using HTML & CSS.</p>
       </div>
+
       <div class="card">
         <h3>Shopping Website</h3>
         <p>E-commerce website project (in progress).</p>
       </div>
+
+      <div class="card">
+        <h3>Login UI</h3>
+        <p>Simple login interface using JavaScript.</p>
+      </div>
     </div>
+
   </div>
 </section>
 
 <section id="contact">
   <div class="container">
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
+
     <p>Email: 1375zeya@gmail.com</p>
     <p>Phone: 9162567265</p>
+
+    <div class="links">
+      <a href="https://github.com/zeya-verse" target="_blank">GitHub Profile</a>
+    </div>
+
     <br>
-    <button onclick="showMessage()">Hire Me</button>
+    <button onclick="msg()">Hire Me</button>
   </div>
 </section>
 
@@ -175,9 +157,9 @@
 </footer>
 
 <script>
-  function showMessage() {
-    alert("Thanks for visiting! Let's work together 🚀");
-  }
+function msg(){
+  alert("Thanks for visiting! Let's work together 🚀");
+}
 </script>
 
 </body>
